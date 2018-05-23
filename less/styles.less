@@ -168,7 +168,7 @@ body {
 
 .portfolio-section {
 	padding: 10px;
-	grid-template-columns: repeat(4,1fr);
+	grid-template-columns: repeat(5,1fr);
 	grid-gap: 10px;
 }
 
@@ -216,7 +216,7 @@ body {
 	}
 
 	&:nth-child(5) {
-		grid-column-start: 2;
+		grid-column-start: 1;
 		grid-column-end: 4;
 	}
 
@@ -225,11 +225,17 @@ body {
 		grid-row-start: 2;
 		grid-row-end: 4;
 	}
+
+	&:nth-child(7) {
+		grid-column: 5;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
 }
 
 .buttoncase {
 	grid-column-start: 1;
-	grid-column-end: 5;
+	grid-column-end: 6;
 	padding: @gutter @gutter 50px;
 }
 
@@ -346,12 +352,18 @@ input, textarea {
 		&:nth-child(5) {
 			grid-column-start: 1;
 			grid-column-end: 3;
-			grid-row: initial;
 		}
 
 		&:nth-child(6) {
-			grid-column: initial;
-			grid-row: initial;
+			grid-column: 3;
+			grid-row-start: 3;
+			grid-row-end: 5;
+		}
+
+		&:nth-child(7) {
+			grid-column: 1;
+			grid-row-start: 4;
+			grid-row-end: 6;
 		}
 	}
 }
@@ -426,6 +438,17 @@ input, textarea {
 
 		&:nth-child(5) {
 			grid-column: initial;
+			grid-row: initial;
+		}
+
+		&:nth-child(6) {
+			grid-column: initial;
+			grid-row: initial;
+		}
+
+		&:nth-child(7) {
+			grid-column: initial;
+			grid-row: initial;
 		}
 	}
 
